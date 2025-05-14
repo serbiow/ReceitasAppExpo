@@ -52,6 +52,14 @@ npx expo start
 
 ---
 
+## 📱 Capturas de Tela
+
+![HomeScreen](./assets/print1.png)
+
+![DetailScreen](./assets/print2.png)
+
+---
+
 ## ✨ Créditos
 
 Criado para prática de:

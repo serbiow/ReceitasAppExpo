@@ -1,70 +1,79 @@
+# 🍲 ReceitasAppExpo
 
-# 📱 App de Receitas ao Ar Livre
-
-Aplicativo criado em **React Native com Expo CLI**, com navegação entre telas, componentes reutilizáveis e dados separados em arquivos. O app exibe uma lista de receitas preparadas ao ar livre. Ao clicar em uma receita, o usuário é levado à tela de detalhes com informações completas.
+Aplicativo de receitas desenvolvido com **React Native** e **Expo**, agora com integração ao **SQLite** para armazenamento local de dados. Testado e validado com **EAS (Expo Application Services)** para builds e deploys eficientes.
 
 ---
 
-## 🚀 Funcionalidades
+## 📱 Funcionalidades
 
-- ✅ Lista com 7 receitas ao ar livre
-- ✅ Navegação entre telas com React Navigation (Stack)
-- ✅ Componentes reutilizáveis (`RecipeCard`)
+- ✅ Exibição de uma lista de receitas ao ar livre
+- ✅ Navegação entre telas utilizando **React Navigation (Stack)**
+- ✅ Componentes reutilizáveis, como `RecipeCard`
 - ✅ Dados centralizados em `recipes.js`
-- ✅ Estilização visual com emojis, cores e layout responsivo
+- ✅ Estilização com emojis, cores e layout responsivo
+- ✅ Persistência de dados com **SQLite**
+- ✅ Testes e builds realizados com **EAS**
 
 ---
 
-## 🧱 Estrutura de Pastas
+## ⚙️ Tecnologias Utilizadas
 
-```
-📁 projeto
-├── App.js
-├── /components
-│   └── RecipeCard.js
-├── /screens
-│   ├── HomeScreen.js
-│   └── DetailScreen.js
-├── /data
-│   └── recipes.js
-```
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [React Navigation](https://reactnavigation.org/)
+- [SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/)
+- [EAS (Expo Application Services)](https://docs.expo.dev/eas/)
 
 ---
 
-## 📦 Dependências
+## 🚀 Como Executar
 
-Instale as dependências do projeto com:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/serbiow/ReceitasAppExpo.git
+   cd ReceitasAppExpo
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o projeto:
+   ```bash
+   npx expo start
+   ```
+
+---
+
+## 🧪 Testes com EAS
+
+O aplicativo foi testado utilizando o **EAS Build**, garantindo builds consistentes para Android e iOS. Para realizar um build:
 
 ```bash
-npx expo install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
-npx expo install @react-navigation/native @react-navigation/native-stack
+npx eas build --platform all
 ```
 
----
-
-## 🧪 Teste local
-
-Execute o projeto com:
+Certifique-se de ter o `eas-cli` instalado globalmente:
 
 ```bash
-npx expo start
+npm install -g eas-cli
 ```
 
 ---
 
-## 📱 Capturas de Tela
+## 🗃️ Banco de Dados (SQLite)
 
-![HomeScreen](./assets/print1.png)
-
-![DetailScreen](./assets/print2.png)
+A aplicação utiliza o **SQLite** para armazenar e gerenciar os dados das receitas localmente, permitindo acesso offline e melhor desempenho.
 
 ---
 
-## ✨ Créditos
+## 👨‍💻 Contribuição
 
-Criado para prática de:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-- Componentização
-- Organização em pastas
-- Navegação com parâmetros
-- UI customizada em React Native
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
